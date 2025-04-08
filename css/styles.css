@@ -1,2 +1,262 @@
 @import url("reset.css");
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoCondensed-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoCondensed-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoCondensed-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+.body {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: #2196F3;
+    padding: 17px;
+    min-width: 200px;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #1574c2;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    padding: 25px 0;
+    font-weight: 500;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-logo {
+    margin-right: 90px;
+}
+
+.header-nav, .header-info {
+    display: flex;
+    gap: 50px;
+}
+
+.header-nav a {
+    color: #212121;
+    text-decoration: none;
+}
+
+.header-info a {
+    color: #757575;
+    text-decoration: none;
+}
+
+.header-info a:hover, .header-nav a:hover {
+    color: #2196F3;
+}
+
+.header-nav a.active {
+    color: #2196F3;
+}
+
+.header-info {
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 600px;
+    background: #2F303A;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 44px;
+    line-height: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+.hero-box {
+    text-align: center;
+    max-width: 696px;
+    margin: 0 auto;
+}
+
+.about {
+    padding: 94px 0;
+}
+
+.about-boxes {
+    display: flex;
+    gap: 30px;
+}
+
+.about-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about-p {
+    color: #757575;
+    line-height: 25px;
+}
+
+.three {
+padding-bottom: 94px;
+}
+
+.three-title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.three-two {
+    display: flex;
+    gap: 30px;
+}
+
+.cards {
+    height: 294px;
+    overflow: hidden;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.last {
+    background: #F5F4FA;
+    min-height: 648px;
+}
+
+.last-title {
+    padding: 94px 0 0 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.last-box {
+    display: flex;
+    gap: 30px;
+
+}
+
+.last-img {
+    width: 270px;
+    height: 368px;
+    background: #fff;
+    box-shadow: 2px 3px 5px 2px #00000024;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.last-desc {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.last-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.last-p {
+    color: #757575;
+    font-weight: 400px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer {
+    background: #2F303A;
+    min-height: 252px;
+}
+
+.img-footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.footer-out {
+    color: #FFFFFF;
+}
+
+.footer-out2 {
+    color: #FFF;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-a a {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 9px 0;
+    display: inline-block;
+    text-decoration: none;
+    color: #FFFFFF99;
+}
+
+.footer-a a:hover {
+    color: #2196F3;
+}
+
