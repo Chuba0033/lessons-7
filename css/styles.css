@@ -362,14 +362,18 @@ background: #b6b4c2;
 }
 
 .box {
-    background: rgba(20, 77, 170, 0.5);
+    background: rgba(33, 150, 243, 0.9);
     color: #fff;
     position: absolute;
     inset: 0;
     display: flex;
-    padding: 10px;
+    padding: 63px 24px;
     align-items: center;
     display: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
 }
 
 .bordp2:hover .box {
