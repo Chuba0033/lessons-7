@@ -70,6 +70,7 @@ body {
     padding: 25px 0;
     font-weight: 500;
     border-bottom: 1px solid #ECECEC;
+    position: relative;
 }
 
 .header-logo {
@@ -79,16 +80,13 @@ body {
 .header-nav, .header-info {
     display: flex;
     gap: 50px;
+    position: relative;
 }
 
 .header-nav a {
     color: #212121;
     text-decoration: none;
-}
-
-.header-info a {
-    color: #757575;
-    text-decoration: none;
+    justify-content: center;
 }
 
 .header-info a:hover, .header-nav a:hover {
@@ -99,8 +97,21 @@ body {
     color: #2196F3;
 }
 
+
+.header-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+
 .header-info {
     margin: 0 auto;
+}
+
+.header-info a {
+    color: #757575;
+    text-decoration: none;
 }
 
 .hero {
@@ -148,7 +159,7 @@ body {
 }
 
 .three {
-padding-bottom: 94px;
+padding: 94px 0;
 }
 
 .three-title {
@@ -267,7 +278,6 @@ padding-bottom: 94px;
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding-top: 92px;
 }
 
 .dow-btn {
@@ -289,7 +299,7 @@ padding-bottom: 94px;
     font-size: 16px;
     font-weight: 500;
     background: #F5F4FA;
-    padding: 6px 25px;
+    padding: 11px 25px;
     cursor: pointer;
     border-radius: 6px;
 }
@@ -306,7 +316,6 @@ background: #b6b4c2;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 94px 0;
 }
 
 .imgp2 {
@@ -366,18 +375,16 @@ background: #b6b4c2;
     color: #fff;
     position: absolute;
     inset: 0;
-    display: flex;
-    padding: 63px 24px;
+    padding: 24px;
     align-items: center;
     display: none;
-    font-weight: 400;
     font-size: 18px;
     line-height: 28px;
 
 }
 
 .bordp2:hover .box {
-    display: block;
+    display: flex;
 }
 
 .cards:hover .cards-desc {
@@ -397,4 +404,43 @@ background: #b6b4c2;
     font-size: 14px;
     text-transform: uppercase;
     display: none;
+}
+
+.submenu {
+    position: relative;
+    min-width: 100px;
+}
+
+.submenu>ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 33px 0;
+    display: none;
+}
+
+.submenu .submenu>ul{
+    top: -33px;
+    left: -101%;
+    z-index: 2;
+    width: 100px;
+}
+
+.submenu a {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1574c2;
+    padding: 10px 0;
+    border-radius: 6px;
+    margin-bottom: 2px;
+}
+
+.submenu:hover>ul {
+    display: block;
+}
+
+.submenu>ul a {
+    white-space: nowrap;
 }
