@@ -63,6 +63,8 @@ body {
 
 .header-container {
     display: flex;
+    justify-content: space-between;
+    text-align: center;
     align-items: center;
 }
 
@@ -79,8 +81,9 @@ body {
 
 .header-nav, .header-info {
     display: flex;
-    gap: 50px;
+    gap: 70px;
     position: relative;
+    align-items: center;
 }
 
 .header-nav a {
@@ -89,7 +92,7 @@ body {
     justify-content: center;
 }
 
-.header-info a:hover, .header-nav a:hover {
+.header-info a:hover, .header-nav a:hover, .info-d a:hover {
     color: #2196F3;
 }
 
@@ -113,6 +116,7 @@ body {
     color: #757575;
     text-decoration: none;
 }
+
 
 .hero {
     min-height: 600px;
@@ -408,22 +412,19 @@ background: #b6b4c2;
 
 .submenu {
     position: relative;
-    min-width: 100px;
 }
 
 .submenu>ul {
     position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 33px 0;
     display: none;
+    padding: 25px 0 0;
+    min-width: 150px;
 }
 
 .submenu .submenu>ul{
-    top: -33px;
-    left: -101%;
+    top: 0;
+    right: 100%;
     z-index: 2;
-    width: 100px;
 }
 
 .submenu a {
@@ -432,15 +433,58 @@ background: #b6b4c2;
     text-align: center;
     text-decoration: none;
     background-color: #1574c2;
-    padding: 10px 0;
     border-radius: 6px;
     margin-bottom: 2px;
+    padding: 10px 10px ;
 }
+
+.submenu.a-submenu {
+    background: inherit;
+    color: black;
+}
+
 
 .submenu:hover>ul {
     display: block;
 }
 
 .submenu>ul a {
+    white-space: nowrap;
+}
+
+.info-d {
+    text-decoration: none;
+    position: relative;
+}
+
+.info-d>ul {
+    position: absolute;
+    display: none;
+    min-width: 150px;
+    padding: 25px 0 0 0;
+}
+
+.info-d a {
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1574c2;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    padding: 10px 10px;
+}
+
+.info-d .a-submenu {
+    background: inherit;
+    color: black;
+}
+
+
+.info-d:hover>ul {
+    display: block;
+}
+
+.info-d>ul a {
     white-space: nowrap;
 }
