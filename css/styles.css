@@ -89,12 +89,14 @@ body {
 
 .hero {
     min-height: 600px;
-    background: #2F303A;
+    background: #2F303A url('../img/Img.jpg') no-repeat center/cover;
     color: #fff;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    position: relative;
 }
+
 
 .hero-title {
     font-size: 44px;
@@ -111,6 +113,18 @@ body {
     margin: 0 auto;
 }
 
+.hero-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0, 0.3);
+}
+
+.hero-box h1 {
+    position: relative;
+    z-index: 1;
+}
+
 .about {
     padding: 94px 0;
 }
@@ -118,6 +132,78 @@ body {
 .about-boxes {
     display: flex;
     gap: 30px;
+}
+
+.about-box {
+    width: 270px;
+    padding-top: 150px;
+    position: relative;
+}
+
+.about-box::before {
+    background: #F5F4FA url('../img/Group1.svg') no-repeat 50%/70px auto;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 6px;
+}
+
+.about-box+.about-box::before {
+    background: #F5F4FA url('../img/Group2.svg') no-repeat 50%/70px auto;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 6px;
+}
+
+.about-box+.about-box+.about-box::before {
+    background: #F5F4FA url('../img/Group3.svg') no-repeat 50%/70px auto;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 6px;
+}
+
+.about-box+.about-box+.about-box+.about-box::before {
+    background: #F5F4FA url('../img/Group4.svg') no-repeat 50%/70px auto;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    border-radius: 6px;
+}
+
+.dlogo {
+    padding: 16px 30px 32px 32px;
+}
+
+.dlogo a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding: 12px 12px;
+}
+
+.dlogo a:hover {
+    background: #2b93e9;
+    border-radius: 20px;
+}
+
+.dlogo>ul {
+    display: flex;
+    gap: 10px;
 }
 
 .about-title {
@@ -207,42 +293,6 @@ padding: 94px 0;
     font-weight: 400px;
     text-align: center;
     font-size: 16px;
-}
-
-.footer {
-    background: #2F303A;
-    min-height: 252px;
-}
-
-.img-footer {
-    margin-top: 60px;
-    margin-bottom: 20px;
-}
-
-.footer-out {
-    color: #FFFFFF;
-}
-
-.footer-out2 {
-    color: #FFF;
-    display: flex;
-    flex-flow: column;
-    margin-bottom: 9px;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-.footer-a a {
-    font-weight: 400;
-    font-size: 14px;
-    margin: 9px 0;
-    display: inline-block;
-    text-decoration: none;
-    color: #FFFFFF99;
-}
-
-.footer-a a:hover {
-    color: #2196F3;
 }
 
 .dow {
@@ -388,6 +438,8 @@ background: #b6b4c2;
     display: none;
     padding: 25px 0 0;
     min-width: 150px;
+    top: 100%;
+    left: 0;
 }
 
 .submenu .submenu>ul{
@@ -439,4 +491,89 @@ background: #b6b4c2;
 
 .info-d:hover>ul {
     display: block;
+    z-index: 5;
+}
+
+.dlogofoot a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    padding: 12px 12px;
+        background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+}
+
+.dlogofoot a:hover {
+    background: #2196F3;
+    border-radius: 20px;
+}
+
+.dlogofoot>ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footer {
+    background: #2F303A;
+    min-height: 252px;
+    display: block;
+}
+
+.img-footer {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.footer-out {
+    color: #FFFFFF;
+}
+
+.footer-out2 {
+    color: #FFF;
+    display: block;
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.footer-a {
+    display: block;
+}
+
+.footer-a a{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 9px 0;
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF99;
+}
+
+.footer-a a:hover {
+    color: #2196F3;
+}
+
+.footdiv1 {
+    width: 231px;
+}
+
+.footdiv1, .footdiv2 {
+    display: inline-block;
+}
+
+.blockfoot {
+    display: flex;
+}
+
+.footdiv2 {
+    padding: 62px 72px;
+}
+
+.footh3 {
+    padding: 10px 0px 20px 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
 }
