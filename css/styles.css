@@ -89,7 +89,7 @@ body {
 
 .hero {
     min-height: 600px;
-    background: #2F303A url('../img/Img.jpg') no-repeat center/cover;
+    background: linear-gradient(rgba(0,0,0, .3), rgba(0,0,0, .7)), url('../img/Img.jpg') no-repeat center/cover;
     color: #fff;
     display: flex;
     flex-flow: column;
@@ -113,12 +113,7 @@ body {
     margin: 0 auto;
 }
 
-.hero-box::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0, 0.3);
-}
+
 
 .hero-box h1, button {
     position: relative;
@@ -135,7 +130,7 @@ body {
 }
 
 .about-box {
-    width: 270px;
+    flex: 1 1 25%;
     padding-top: 150px;
     position: relative;
 }
@@ -186,25 +181,72 @@ body {
 
 .dlogo {
     padding: 16px 30px 32px 32px;
+    position: relative;
 }
 
 .dlogo a {
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
-    text-align: center;
     padding: 12px 12px;
+    background-position: center;
+}
+
+.dlogo a::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(../img/instagram2.svg) no-repeat, 50%/20px;
+}
+
+.dlogo ul li:nth-child(2) a {
+    background-position: center;
+}
+
+.dlogo ul li:nth-child(2) a::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(../img/twitter1.svg) no-repeat, 50%/20px;
+}
+
+.dlogo ul li:nth-child(3) a {
+    background-position: center;
+}
+
+.dlogo ul li:nth-child(3) a::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(../img/facebook1.svg) no-repeat, 50%/20px;
+}
+
+.dlogo ul li:nth-child(4) a {
+    background-position: center;
+}
+
+.dlogo ul li:nth-child(4) a::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(../img/linkedin1.svg) no-repeat, 50%/20px;
 }
 
 .dlogo a:hover {
     background: #2b93e9;
-    border-radius: 20px;
+    border-radius: 50%;
 }
+
 
 .dlogo>ul {
     display: flex;
     gap: 10px;
 }
+
 
 .about-title {
     margin-bottom: 10px;
@@ -495,18 +537,60 @@ background: #b6b4c2;
 }
 
 .dlogofoot a {
-    display: block;
+    display: flex;
     width: 44px;
     height: 44px;
-    text-align: center;
+    background-position: center;
     padding: 12px 12px;
-        background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
+}
+
+.dlogofoot a::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(../img/inst1.svg) no-repeat, 50%/20px;
+}
+
+.dlogofoot ul li:nth-child(2) a {
+    background-position: center;
+}
+
+.dlogofoot ul li:nth-child(2) a::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(../img/twit1.svg) no-repeat, 50%/20px;
+}
+
+.dlogofoot ul li:nth-child(3) a {
+    background-position: center;
+}
+
+.dlogofoot ul li:nth-child(3) a::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(../img/fb1.svg) no-repeat, 50%/20px;
+}
+
+.dlogofoot ul li:nth-child(4) a {
+    background-position: center;
+}
+
+.dlogofoot ul li:nth-child(4) a::before {
+    content: '';
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: url(../img/lin1.svg) no-repeat, 50%/20px;
 }
 
 .dlogofoot a:hover {
     background: #2196F3;
-    border-radius: 20px;
+    border-radius: 50%;
 }
 
 .dlogofoot>ul {
