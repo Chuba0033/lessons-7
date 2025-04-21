@@ -200,42 +200,16 @@ body {
     background-position: center;
 }
 
-.dlogo a::before {
-    content: '';
-    position: absolute;
-}
-
-.dlogo ul li:nth-child(2) a {
-    background-position: center;
-}
-
-.dlogo ul li:nth-child(2) a::before {
-    content: '';
-    position: absolute;
-}
-
-.dlogo ul li:nth-child(3) a {
-    background-position: center;
-}
-
-.dlogo ul li:nth-child(3) a::before {
-    content: '';
-    position: absolute;
-}
-
-.dlogo ul li:nth-child(4) a {
-    background-position: center;
-}
-
-.dlogo ul li:nth-child(4) a::before {
-    content: '';
-    position: absolute;
-}
-
 .dlogo a:hover {
     background: #2b93e9;
     border-radius: 50%;
     fill: #FFFFFF;
+        transition: all .5s ease-out;
+}
+
+.dlogo a:hover svg{
+    fill: #FFFFFF;
+        transition: all .5s ease-out;
 }
 
 
@@ -472,6 +446,10 @@ background: #b6b4c2;
     position: relative;
 }
 
+.submenu ul {
+    z-index: 5;
+}
+
 .submenu>ul {
     position: absolute;
     display: none;
@@ -486,6 +464,7 @@ background: #b6b4c2;
     right: 100%;
     z-index: 2;
 }
+
 
 .submenu a {
     color: white;
@@ -541,41 +520,10 @@ background: #b6b4c2;
     padding: 12px 12px;
 }
 
-.dlogofoot a::before {
-    content: '';
-    position: absolute;
-}
-
-.dlogofoot ul li:nth-child(2) a {
-    background-position: center;
-}
-
-.dlogofoot ul li:nth-child(2) a::before {
-    content: '';
-    position: absolute;
-}
-
-.dlogofoot ul li:nth-child(3) a {
-    background-position: center;
-}
-
-.dlogofoot ul li:nth-child(3) a::before {
-    content: '';
-    position: absolute;
-}
-
-.dlogofoot ul li:nth-child(4) a {
-    background-position: center;
-}
-
-.dlogofoot ul li:nth-child(4) a::before {
-    content: '';
-    position: absolute;
-}
-
 .dlogofoot a:hover {
     background: #2196F3;
     border-radius: 50%;
+    transition: all .5s linear;
 }
 
 .dlogofoot>ul {
@@ -676,10 +624,13 @@ background: #b6b4c2;
 }
 
 .fox li:hover svg {
-    fill: #2196F3;
+    fill: #d6e4f0;
+    transition: all 1s linear;
 }
 
 .fox li:hover {
-        fill: #2196F3;
-        border: 1px solid #2196F3;
+    fill: #2196F3;
+    background: #2196F3;
+    border: 1px solid #2196F3;
+    transition: all 1s linear;
     }
